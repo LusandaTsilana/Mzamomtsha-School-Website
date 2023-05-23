@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="hangman.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="options-container"></div>
+      <div id="letter-container" class="letter-container hide"></div>
+      <div id="user-input-section"></div>
+      <canvas id="canvas"></canvas>
+      <div id="new-game-container" class="new-game-popup hide">
+        <div id="result-text"></div>
+        <button id="new-game-button">New Game</button>
+      </div>
+      
+    </div>
+
+    <div class="containerBackToHome" id="btnBackToHome">
+       <button id=btnEdit onclick="window.location.href = 'home.htm';" >Back to home </button>
+    </div>
+   
+
+    <div class="containerInstructions" id="gameInstructions">
+      <p id="instructions"> 
+      <ul> <h2>Welcome to the Hang Man Game</h2><br>
+       <u><h3>Instructions:</h3></u> <br>
+        Begin the game by choosing an option<br>
+        Select the letters on the keyboard<br>
+      </ul>
+    </p>
+    </div>
+    
+    <!-- Script -->
+    <script src="hangman.js"></script>
+  </body>
+</html>

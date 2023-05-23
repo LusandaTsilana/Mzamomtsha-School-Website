@@ -1,0 +1,164 @@
+<!-- HELLO! -->
+<!-- Hi again -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mzamomstsha Primary School</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+      <!-- JAVASCRIPT CODE -->
+    
+      <script>
+
+
+        // Scroll to Top feature
+        function topScroll(){
+          window.scrollTo({top:0, behavior: "smooth"});
+        }
+    
+        // Change color hover effect on header
+        function changeTextColorOn(){
+          document.getElementsById("aboutTitle").style.color = "blue";
+          }
+        
+        function changeTextColorOff(){
+          document.getElementsById("aboutTitle").style.color = "black";
+        }
+        
+      </script>
+  
+
+  <header>
+
+    <div class="jumbotron jumbotron-fluid text-white">
+      <div class="container">
+        <div class="schoolbackground row">
+      
+          <div class=" col logo">
+            <a href="home.htm"><img src="images/School_badge-removebg-preview.png" alt="logo"></a>
+          </div>
+          
+          <div class="col">
+            <h1 class="display-3">Mzamomtsha Primary School</h1>
+          
+          </div>
+        </div>
+       
+      </div>
+                                                 
+      <!-- justify-content-center  flex-column flex-md-row   -->
+    </div>
+
+   <!-- The navigation menu -->
+  <div class="tab">
+
+    <a href="home.htm"><button class="tablinks" onclick="openLink(event, 'homeLink')"   style="color: white;">Home</button></a>
+    <a href="about2.html"><button class="tablinks" onclick="openlink(event, 'about.html')" style="color: white;" >About</button></a>
+    <a href="Staff.htm"><button class="tablinks" onclick="openlink(event, 'staff.hmtl')" style="color: white;" >Staff</button></a>
+    <a href="events.html"><button class="tablinks" onclick="openlink(event, 'events.html')" style="color: white;" >Events</button></a>
+    <a href="faq.html"><button class="tablinks" onclick="openlink(faq, 'faq.html')" style="color: white">FAQ</button></a>
+    <a href="contactUs.html"><button class="tablinks" onclick="openlink(contact, 'contact.html')" style="color: white;" >Contact</button></a>
+
+    <!-- Game Button -->
+    <a href="hangman.html"><button class="tablinks" id="gameBtn" onclick="window.open('hangman.html', 'newwindow', 'width=10000,height=5000'); return false;" style="color:white" ><strong>PLAY GAME</strong></button></a>
+
+    
+
+    
+    
+  </div>
+  
+  </header><br>
+
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-sm-12 col-md-8 12col-lg-8">
+                <h2 class="text-left">Education</h2>
+                <p>Here at Mzamomstsha Primary we aim to create classrooms where young children can thrive and cultivate their minds. We allow children to explore their imaginations and express their minds, to develop strong bonds with their peers and help each other to be smarter kids. We believe that a strong leadership from staff and parents will help young children have good role models. By providing children with the necesssary tools and skills we believe we can mold a brighter future for South Africa.</p>    
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 mt-3 EducationArticle">
+                <img id='book'src="https://thumbs.dreamstime.com/b/open-book-hardback-books-wooden-table-education-background-back-to-school-copy-space-text-76106466.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-sm-12 col-md-8 col-lg-8 order-12 text-right SportArticleText">
+                <h2 >Sports</h2>
+                <p >At Mzamomtsha Primary we believe that consistent participation in sports and physical activity at a young age encourages positive cognitive development in children – developing and learning to use the core skills of the brain to think, learn, remember, and problem solve. allows learners an opportunity to express themselves and connect with other people. The social benefits play a vital role in the development of a learner in society by teaching them how to participate in a team.</p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 mt-3 order-1 SportArticle">
+                <img id='sports'src="https://epworth.co.za/wp-content/uploads/2022/05/prep-sport-3.jpg" alt="sportsImage">
+            </div>
+        </div>
+            
+
+        <div class="row mb-5">
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <h2 class="text-left">Arts & Extra Murals</h2>
+                <p>Being creative is a large part of a school childs life and in our Arts and Culture programs we aim to cultivate that creativity in our pupils. Mzamomstsha Primary offers a wide range of extra mural activities for our students, from Netball to Debate team. Having our students actively participate in all these activities creates a more harmonious school environment fro the entire school community.</p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 ExtraMuralArticle">
+                <img id ='arts'src="images/extramurals.jpg" alt="extramurals">
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topScroll()" id="scrollButton">Click to Scroll to Top</button>
+</body>
+
+
+
+
+<footer id ="page-container" class="page-footer font-medi pt-10 fixed-bottom">
+
+    <div class="container-fluid text-center text-md-left">
+  
+      <div style="padding-bottom: 0;margin-bottom: 0;" class="container">
+        <div class="row justify-content-between">
+  
+          <div class="col-lg-4 col-md-6 mt-md-0 mt-3 text-center" style="color: white;">
+            <h5>Mzamomtsha Primary School</h5>
+          </div>
+  
+          
+            <div class="col-lg-4">
+              <div class="row">
+                <div class=" col homeFooter">
+                  <a href="home.htm" style="color: white;"><strong>Home</strong> </a>
+                </div>
+    
+                <div class=" col-4 contactusText contactFooter">
+                  <a href="contactUs.html" style="color: white;"><strong>Contact Us</strong> </a>
+                </div>
+    
+                <div class="col-3 aboutFooter">
+                  <a href="about2.html" style="color: white;"><strong>About</strong> </a>
+                </div>
+              </div>
+              
+            </div>
+            <!-- SOCIAL MEDIA ICONS -->
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="row justify-content-center">
+                <div class="col-2" style="color: white;"><a class=" logos fa fa-facebook" href="https://www.facebook.com/"></a></div>
+                <div class="col-2" style="color: white;"><a class="fa fa-twitter" href="https://twitter.com/"></a></div>
+                <div class="col-2" style="color: white;"><a class="fa fa-envelope" href="https://www.google.com/gmail/about/"></a></div>
+              </div>
+            </div>
+        </div>
+        </div>
+        <script src="home.js"></script>
+  </footer>
+  <!-- mr-md-5 mr-3 -->
+  <!-- COPY FOOTER CONTENT UNTIL HERE! -->
+</html>

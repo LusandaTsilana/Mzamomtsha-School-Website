@@ -1,0 +1,31 @@
+
+body{
+    background-color: rgb(240, 240, 240);
+    
+}
+.containerSubmit{
+    height: 500px;
+    width:500px;
+    padding-left: 350px;
+    
+}
+
+h1{font-style: italic;
+    text-align: center;
+    margin-left: 200px;
+
+
+}
+
+button{
+    background-color: rgb(77, 199, 169);
+    border-radius: 30px;
+    height: 35px;
+    width: 150px;
+    
+    border: white;
+    color: white;
+    margin-left: 280px;
+
+  
+}

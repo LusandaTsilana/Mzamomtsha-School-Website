@@ -1,0 +1,487 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events Page</title>
+  <link rel="stylesheet" href="
+  events.css">
+</head>
+checkin!!!
+-->
+
+<!--implementation of bootstrap starts here-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Events at Mzamomtsha Primary School</title>
+
+  <!--bootstrap css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel='stylesheet' href='events.css'>
+
+
+  <!-- Social Media Icons -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<!--Header w/ bootstrap css below-->
+
+<body>
+
+
+  <!-- JAVASCRIPT CODE -->
+
+  <script>
+
+
+    // Scroll to Top feature
+    function topScroll() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    // Change color hover effect on header
+    function changeTextColorOn() {
+      document.getElementsById("aboutTitle").style.color = "blue";
+    }
+
+    function changeTextColorOff() {
+      document.getElementsById("aboutTitle").style.color = "black";
+    }
+
+  </script>
+  <header>
+
+    <div class="jumbotron jumbotron-fluid text-white">
+      <div class="container">
+        <div class="schoolbackground row">
+          <div class=" col logo">
+            <a href="home.htm"><img src="images/School_badge-removebg-preview.png" alt="logo"></a>
+          </div>
+          <div class="col">
+            <h1 class="display-3" id="MZ-HEADING">Mzamomtsha Primary School</h1>
+          </div>
+        </div>
+      </div>
+                                                 
+      <!-- justify-content-center  flex-column flex-md-row   -->
+    </div>
+
+   <!-- The navigation menu -->
+  <div class="tab">
+
+    <a href="home.htm"><button class="tablinks" onclick="openLink(event, 'homeLink')"   style="color: white;">Home</button></a>
+    <a href="about2.html"><button class="tablinks" onclick="openlink(event, 'about.html')" style="color: white;" >About</button></a>
+    <a href="Staff.htm"><button class="tablinks" onclick="openlink(event, 'staff.hmtl')" style="color: white;" >Staff</button></a>
+    <a href="events.html"><button class="tablinks" onclick="openlink(event, 'events.html')" style="color: white;" >Events</button></a>
+    <a href="faq.html"><button class="tablinks" onclick="openlink(faq, 'faq.html')" style="color: white">FAQ</button></a>
+    <a href="contactUs.html"><button class="tablinks" onclick="openlink(contact, 'contact.html')" style="color: white;" >Contact</button></a>
+    <a href="admission.html"><button class="tablinks" onclick="openlink(admission, 'admission.html')" style="color: white;" >Admission</button></a>
+    <!-- Game Button -->
+    <a href="hangman.html"><button class="tablinks" id="gameBtn" onclick="window.open('hangman.html', 'newwindow', 'width=10000,height=5000'); return false;" style="color:white" ><strong>PLAY GAME</strong></button></a>
+    
+  </div>
+  
+
+  </header>
+  <br><br><br>
+
+  <div>
+    <!--<h1><strong>Events</strong></h1>-->
+    <h2 class="display-4" id="eventsh1"><strong>Events</strong></h1>
+    <br>
+    <br>
+    <h2 class="display-7" id="extracurricularh1">Extra Curricular Activities</h1>
+
+    <div class="fixed-container">
+      <div class="row">
+
+        <h3><u>Culture</u></h3><br><br>
+
+        <p><strong>Choir :</strong> A society led by our choir conductor Mr Andile Mvelase. The choir enables students
+          to perform and develop their singing abilities to represent the school in local competitions.</p><br>
+
+        <p><strong>Debate Club :</strong> A society which gives students a fun way of developing their oracy skills.
+          There is a range of activities to help with critical thinking and confident communication therefore, allowing
+          students to also be informed about current affairs. </p><br>
+        <p><strong>Dance Club :</strong> A society which gives students an opportunity to learn dance styles from
+          different cultural backgrounds such as african traditional dance, hip hop dance and salsa dance.</p><br>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="fixed-container">
+    <div class="row">
+
+      <h3><u>Sports</u></h3><br><br>
+
+      <p><strong>Soccer Club :</strong> A society which gives students a fun way of developing their oracy skills. There
+        is a range of activities to help with critical thinking and confident communication therefore, allowing students
+        to also be informed about current affairs.</p><br>
+
+      <p><strong>Netball Club :</strong>To help students with strength and agility. Our core values include RESPECT,
+        TEAMWORK, DISCIPLINE, EXCELLENCE and FUN.</p><br>
+      <p>Lastly, we also have a <strong>First Aid Team</strong> to provide emergency care during matches and tornaments.
+      </p><br>
+    </div>
+  </div>
+
+
+  <div class="fixed-container">
+    <div class="row">
+
+      <h3><u>Fundraisers</u></h3><br><br>
+      <br>
+      <br>
+      <div class="row mb-5">
+        <div class="col-sm-12 col-md-12 col-lg-3">
+
+          <ul>
+            <li>Market Day</li><br>
+            <li>Recycable-Items Fashion Show</li><br>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-3">
+          <ul>
+            <li>Valentine's Day Show</li><br>
+            <li>Raffles</li><br>
+          </ul>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-3">
+          <ul>
+            <li>Civvies on Fridays</li><br>
+            <li>InterHouse Sports Day</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-3">
+          <ul>
+            <li>Talent Show</li><br>
+            <li>Recycling Round Up</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 7</div>
+      <img src="images/schoolchoir 1.0.jpg" alt="school choir" style="width: 100%">
+      <div class="text">SCHOOL CHOIR</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 7</div>
+      <img src="images/fashion show.jpg" alt="mzamomtsha primary school fashion show" style="width: 100%">
+      <div class="text">FASHION SHOW WITH RECYCLED ITEMS</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 7</div>
+      <img src="images/market day.jpg" alt="mzamomtsha primary school market day" style="width: 100%">
+      <div class="text">MARKET DAY</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 7</div>
+      <img src="images/dance club.jpg" alt="mzamomtsha primary school dance club" style="width: 100%">
+      <div class="text">AFRICAN DANCE CLUB</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 7</div>
+      <img src="images/netball.jpg" alt="mzamomtsha primary school netball club" style="width: 100%">
+      <div class="text">GIRLS NETBALL TEAM</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 7</div>
+      <img src="images/debate club.jfif" alt="mzamomtsha primary school debate club" style="width: 100%">
+      <div class="text">DEBATE TEAM</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 7</div>
+      <img src="images/sport image.webp" alt="mzamomtsha primary soccer club" style="width: 100%">
+      <div class="text">BOYS SOCCER TEAM</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    
+  </script>
+  <br>
+<br>
+<br>
+  <h2 class="display-7" id="upcomingevents">Upcoming Events</h1>
+<br>
+
+  <div class="event-container">
+    <h3 class="year">2023</h3>
+
+    <div class="event-container">
+      <div class="event">
+
+      
+        <div class="event-left">
+          <div class="event-date">
+            <!--<div class="row md-6">-->
+            <div class="col-sm-16 col-md-16 col-lg-3">
+            <div class="date">08</div>
+          <div class="month">JUN</div>
+        </div>
+        </div>
+          </div>
+          
+          <div class="event-right"></div>
+          <div class="col-sm-12 col-md-16 col-lg-3">
+      <h3 class="event-title">Debate Competition</h3>
+</div>
+
+      <div class="event-description">
+        <div class="col-sm-16 col-md-16 col-lg-7">
+        <p>A competition where students discuss a subject for judgement. The best argument wins.</p>
+      </div>
+      </div>
+
+      <div class="event-timing">
+        <div class="col-sm-16 col-md-16 col-lg-3">
+        <img src="images/images.clock.png" alt="" height="20px" width="20px" /> 03:00 PM
+      </div>
+      </div>
+
+        </div>
+       </div> 
+      </div>
+    </div>
+
+    <div class="event-container">
+      <div class="event">
+
+      
+        <div class="event-left">
+          <div class="event-date">
+            <!--<div class="row md-6">-->
+            <div class="col-sm-16 col-md-16 col-lg-3">
+            <div class="date">16</div>
+          <div class="month">JUL</div>
+        </div>
+        </div>
+          </div>
+          
+          <div class="event-right"></div>
+          <div class="col-sm-12 col-md-16 col-lg-3">
+      <h3 class="event-title">Talent Show</h3>
+</div>
+
+      <div class="event-description">
+        <div class="col-sm-16 col-md-16 col-lg-7">
+       <p> Students come together to show their talents for the grand prize of R500.</p>
+      </div>
+      </div>
+
+      <div class="event-timing">
+        <div class="col-sm-16 col-md-16 col-lg-3">
+        <img src="images/images.clock.png" alt="" height="20px" width="20px" /> 01:00 PM
+      </div>
+      </div>
+
+        </div>
+       </div> 
+      </div>
+    </div>
+
+    <div class="event-container">
+      <div class="event">
+
+      
+        <div class="event-left">
+          <div class="event-date">
+            <!--<div class="row md-6">-->
+            <div class="col-sm-16 col-md-16 col-lg-3">
+            <div class="date">11</div>
+          <div class="month">SEP</div>
+        </div>
+        </div>
+          </div>
+          
+          <div class="event-right"></div>
+          <div class="col-sm-12 col-md-16 col-lg-3">
+      <h3 class="event-title">Student Achiever Awards</h3>
+</div>
+
+      <div class="event-description">
+        <div class="col-sm-16 col-md-16 col-lg-7">
+        <p>Students are recognized for their work ethic in academics and Sports</p>
+      </div>
+      </div>
+
+      <div class="event-timing">
+        <div class="col-sm-16 col-md-16 col-lg-3">
+        <img src="images/images.clock.png" alt="" height="20px" width="20px" /> 11:00 AM
+      </div>
+      </div>
+
+        </div>
+       </div> 
+      </div>
+    </div>
+
+    
+    <div class="event-container">
+      <div class="event">
+
+      
+        <div class="event-left">
+          <div class="event-date">
+            <!--<div class="row md-6">-->
+            <div class="col-sm-16 col-md-16 col-lg-3">
+            <div class="date">28</div>
+          <div class="month">OCT</div>
+        </div>
+        </div>
+          </div>
+          
+          <div class="event-right"></div>
+          <div class="col-sm-12 col-md-16 col-lg-3">
+      <h3 class="event-title">Surf Walk</h3>
+</div>
+
+      <div class="event-description">
+        <div class="col-sm-16 col-md-16 col-lg-7">
+       <p>Students take a Surf Walk from Sea Point to Green Point Pool Park.</p>
+      </div>
+      </div>
+
+      <div class="event-timing">
+        <div class="col-sm-16 col-md-16 col-lg-3">
+        <img src="images/images.clock.png" alt="" height="20px" width="20px" /> 09:00 AM
+      </div>
+      </div>
+
+        </div>
+       </div> 
+      </div>
+    </div>
+       
+
+
+    
+  <br>
+<br>
+
+
+  
+  <button onclick="topScroll()" id="scrollButton">Click to Scroll to Top</button>
+  
+</body>
+
+<br>
+<br>
+<br>
+<footer class="page-footer font-medi pt-10" style="background-color: #053a66;">
+
+  <div class="container-fluid text-center text-md-left">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 mt-md-0 mt-3 text-center" style="color: white;">
+          <h5>Mzamomtsha Primary School</h5>
+        </div>
+
+        <!-- <div class="col-md-3 mb-md-0 mb-3"> -->
+        <div class="col-lg-4">
+          <div class="row">
+            <div class=" col homeFooter">
+              <a href="home.htm" style="color: white;"><strong>Home</strong> </a>
+            </div>
+
+            <div class=" col-4 contactusText contactFooter">
+              <a href="contactUs.html" style="color: white;"><strong>Contact Us</strong> </a>
+            </div>
+
+            <div class="col-3 aboutFooter">
+              <a href="about2.html" style="color: white;"><strong>About</strong> </a>
+            </div>
+          </div>
+
+        </div>
+        <!-- SOCIAL MEDIA ICONS -->
+        <div class="footerEmoji col-lg-4">
+          <div class="row">
+            <div class="col-2" id="iconss" style="color: white;"><a class=" logos fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x"
+                href="https://www.facebook.com/"></a></div>
+
+            <div class="col-2" id="iconss"  style="color: white;"><a class="fa fa-twitter fa-lg mr-md-5 mr-3 fa-2x"
+                href="https://twitter.com/"></a></div>
+
+            <div class="col-2" id="iconss" style="color: white;"><a class="fa fa-envelope fa-lg mr-md-5 mr-3 fa-2x"
+                href="https://www.google.com/gmail/about/"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>

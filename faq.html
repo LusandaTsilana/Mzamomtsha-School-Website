@@ -1,0 +1,216 @@
+<!--Frequently Asked Questions page-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <script src="faq.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="faq.css">
+
+  <!-- Social Media Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>FAQ Page</title>
+
+</head>
+
+
+<body>
+
+  <header>
+
+    <div class="jumbotron jumbotron-fluid text-white">
+      <div class="container">
+        <div class="schoolbackground row">
+          <div class=" col logo">
+            <a href="home.htm"><img src="images/School_badge-removebg-preview.png" alt="logo"></a>
+          </div>
+          <div class="col">
+            <h1 class="display-3">Mzamomtsha Primary School</h1>
+          </div>
+        </div>
+      </div>
+                                                 
+      <!-- justify-content-center  flex-column flex-md-row   -->
+    </div>
+
+   <!-- The navigation menu -->
+  <div class="tab">
+
+    <a href="home.htm"><button class="tablinks" onclick="openLink(event, 'homeLink')"   style="color: white;">Home</button></a>
+    <a href="about2.html"><button class="tablinks" onclick="openlink(event, 'about.html')" style="color: white;"  >About</button></a>
+    <a href="Staff.htm"><button class="tablinks" onclick="openlink(event, 'staff.hmtl')" style="color: white;" >Staff</button></a>
+    <a href="events.html"><button class="tablinks" onclick="openlink(event, 'events.html')" style="color: white;" >Events</button></a>
+    <a href="faq.html"><button class="tablinks" onclick="openlink(faq, 'faq.html')" style="color: white">FAQ</button></a>
+    <a href="contactUs.html"><button class="tablinks" onclick="openlink(contact, 'contact.html')" style="color: white;" >Contact</button></a>
+    
+    <!-- Game Button -->
+    <a href="hangman.html"><button class="tablinks" id="gameBtn" onclick="window.open('hangman.html', 'newwindow', 'width=10000,height=5000'); return false;" style="color:white" ><strong>PLAY GAME</strong></button></a>
+    
+  </div>
+  
+
+  
+  </header><br>
+
+  <!--Heading-->
+  <h1 class="display-4" style="color:black; padding-top: 20px;" id="FAQ"><strong>Frequently Asked Questions</strong>
+  </h1>
+  <br>
+
+  <div class="container" id="faqContainer">
+
+    <!--The questions and answers:
+  each question is wrapped in a details tag, with the summary tag being the text that shows when the questionis clicked on.
+  -->
+
+    <!--Question 1-->
+    <div class="red">
+      <details>
+        <summary>What is the admission procedure?</summary><br>
+        <div style="color: black">Applications can be completed on-site at the Mzamomtsha Primary School or an online
+          form can completed by contacting the schools email and requesting an application form.</div>
+      </details><br>
+
+      <!--Question 2-->
+      <details>
+        <summary>What curriculum will the school follow?</summary><br>
+        <div style="color: black">The school will follow the government issued curriculum of CAPS for all school levels
+          from pre-primary to secondary school.</div>
+      </details><br>
+
+      <!--Question 3-->
+      <details>
+        <summary>What kind of security measures are offered to protect the pupils at school?</summary><br>
+        <div style="color: black">The school has employed multiple security guards which are stationed at each of the
+          school grounds entrances. In addition we have surveilance cameras in most frequented areas of the school and
+          school grounds. In case of emergency, the pupils will participate in emergency evacuation procedures twice a
+          year.</div>
+      </details><br>
+
+      <!--Question 4-->
+      <details>
+        <summary>Where can I get information to contact the school?</summary><br>
+        <div style="color: black">The schools contact information can be found on our website under Contact, or
+          alternatively, you can click HERE to be directed to the page.</div>
+      </details><br>
+
+      <!--Question 5-->
+      <details>
+        <summary>Is Afterschool provided at no cost?</summary><br>
+        <div style="color: black">Afterschool is available for all pupils at an additional fee of R800 per annum.
+          Additional information can be found by contcting the school or by visiting our administative offices at
+          Mzamomtsha primary. </div>
+      </details><br>
+
+      <!--Question 6-->
+      <details>
+        <summary>Where can I find the school calendar?</summary><br>
+        <div style="color: black">The school calendar is issued out to every pupil at the beginning of each school term,
+          or alternatively important dates and events can be found on the Mzamomtsha Primary website under Events.</div>
+      </details><br>
+
+    </div>
+    <script>
+
+
+      function topScroll(){
+        window.scrollTo({top:0, behavior: "smooth"});
+      }
+
+      // Change color hover effect on header
+      function changeTextColorOn(){
+        document.getElementsById("aboutTitle").style.color = "blue";
+        }
+      
+      function changeTextColorOff(){
+        document.getElementsById("aboutTitle").style.color = "black";
+      }
+    
+      var acc = document.getElementsByClassName("details_summary");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var faqContainer = this.nextElementSibling;
+          if (faqContainer.style.maxheight) {
+            faqContainer.style.maxheight = null;
+          } else {
+            faqContainer.style.maxheight = faqContainer.scrollheight + "px";
+          }
+        });
+      }
+      
+    </script>
+
+    
+
+  </div>
+  <button onclick="topScroll()" id="scrollButton">Click to Scroll to Top</button>
+</body>
+
+<br>
+<br>
+
+
+<!-- COPY FOOTER CONTENT FOR HTML FROM HERE! -->
+
+<footer class="page-footer font-medi pt-10" style="background-color: #053a66;">
+
+  <div class="container-fluid text-center text-md-left">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 mt-md-0 mt-3 text-center" style="color: white;">
+          <h5>Mzamomtsha Primary School</h5>
+        </div>
+
+        <!-- <div class="col-md-3 mb-md-0 mb-3"> -->
+        <div class="col-lg-4">
+          <div class="row justify-content-around">
+            <div class=" col-2 homeFooter">
+              <a href="home.htm" style="color: white;"><strong>Home</strong> </a>
+            </div>
+
+            <div class=" col-2 contactFooter">
+              <a href="contactUs.html" style="color: white;"><strong>Contact Us</strong> </a>
+            </div>
+
+            <div class="col-2 aboutFooter">
+              <a href="about2.html" style="color: white;"><strong>About</strong> </a>
+            </div>
+          </div>
+
+        </div>
+        <!-- SOCIAL MEDIA ICONS -->
+        <div class="footerEmoji col-lg-4">
+          <div class="row">
+            <div class="col-2"><a class=" logos fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x"
+                href="https://www.facebook.com/" style="color: white;"></a></div>
+
+            <div class="col-2" style="color: white;"><a class="fa fa-twitter fa-lg mr-md-5 mr-3 fa-2x"
+                href="https://twitter.com/" style="color: white;"></a></div>
+
+            <div class="col-2" style="color: white;"><a class="fa fa-envelope fa-lg mr-md-5 mr-3 fa-2x"
+                href="https://www.google.com/gmail/about/" style="color: white;"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+
+<!-- COPY FOOTER CONTENT UNTIL HERE! -->
+
+</html>

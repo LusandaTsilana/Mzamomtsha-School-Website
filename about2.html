@@ -1,0 +1,200 @@
+
+<!-- new -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+
+ 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel='stylesheet' href='about2.css'/>
+
+  <!-- Social Media Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <!-- menu -->
+  
+  <div class="jumbotron jumbotron-fluid text-white">
+    <div class="container">
+      <div class="schoolbackground row">
+        <div class=" col logo">
+          <a href="home.htm"><img src="images/School_badge-removebg-preview.png" alt="logo"></a> 
+        </div>
+        <div class="col">
+          <h1 class="display-3" style="color: white;">Mzamomtsha Primary School</h1> 
+        </div>
+      </div>
+    </div>
+
+    <!-- justify-content-center  flex-column flex-md-row   -->
+</div>
+
+<div class="tab">
+
+  <a href="home.htm"><button class="tablinks" onclick="openLink(event, 'homeLink')"   style="color: white;">Home</button></a>
+  <a href="about2.html"><button class="tablinks" onclick="openlink(event, 'about.html')" style="color: white;" >About</button></a>
+  <a href="Staff.htm"><button class="tablinks" onclick="openlink(event, 'staff.hmtl')" style="color: white;" >Staff</button></a>
+  <a href="events.html"><button class="tablinks" onclick="openlink(event, 'events.html')" style="color: white;" >Events</button></a>
+  <a href="faq.html"><button class="tablinks" onclick="openlink(faq, 'faq.html')" style="color: white">FAQ</button></a>
+  <a href="contactUs.html"><button class="tablinks" onclick="openlink(contact, 'contact.html')" style="color: white;" >Contact</button></a>
+
+  <!-- Game Button -->
+  <a href="hangman.html"><button class="tablinks" id="gameBtn" onclick="window.open('hangman.html', 'newwindow', 'width=10000,height=5000'); return false;" style="color:white" ><strong>PLAY GAME</strong></button></a>
+  
+  
+</div>
+
+
+</header>
+<br><br><br>
+
+  <!-- JAVASCRIPT file -->
+  <script>
+
+
+    // Scroll to Top feature
+    function topScroll(){
+      window.scrollTo({top:0, behavior: "smooth"});
+    }
+  // Change color hover effect on header
+  function changeTextColorOn(){
+        document.getElementsById("aboutTitle").style.color = "blue";
+        }
+      
+      function changeTextColorOff(){
+        document.getElementsById("aboutTitle").style.color = "black";
+      }
+    
+      var acc = document.getElementsByClassName("details_summary");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var faqContainer = this.nextElementSibling;
+          if (faqContainer.style.maxheight) {
+            faqContainer.style.maxheight = null;
+          } else {
+            faqContainer.style.maxheight = faqContainer.scrollheight + "px";
+          }
+        });
+      }
+    
+  </script>
+
+
+
+
+  <h1 class="aboutheader display-4"><strong>About</strong></h1>
+
+  <div class="section">
+    <img src="/images/mzamomtsha-primary-school.jpg" width="330" height="250" img>
+
+
+    <div class="text">
+
+      <h3><u> <strong> History</strong></u></h3><br><br>
+
+      <p>Between the towns of Khayelistha and Umfuleni, in the Western Cape Province of the Republic of South Africa, is where Mzamomtsha Primary School is situated. Simphiwe Khuze, the school's headmaster, started working there in 2008. The school is situated in Drift Sands, a semi-township that was formerly an unofficial village. Since then, Drift Sands has been improved, and with assistance from the South African government, it has become a vast township with cutting-edge housing complexes. Mzamomtsha Primary School is an important part of Drift Sands and supports the neighborhood. </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="section">
+    <img src="./images/curriculum.jfif" width="330" height="250"></img>
+    <div class="text">
+   <h3><u><strong> Curriculum</strong></u></h3><br><br>
+      
+  <p><ul>
+    <li>Foundation Phase - (Grade 1-3) The learners will be provided with a strong academic foundation in reading, writing and mathematics</li>
+    <li>Intermidiate Phase - (Grade 4-6) The learners will get a chance to touch on their critical thinking skills with the help of our wonderful educators. In this phase,our learners study IsiXhosa, English, math, life skills, physical education etc.</li>
+  </ul> </p>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="section">
+      <img src="/images/download.jpeg" width="330" height="250"></img>
+
+      <div class="text" id="fundtext">
+
+        <h3><u> <strong>Policies</strong> </u></h3><br>
+        <p>Every learner is expected to take 100 % ownership of his/her academic integrity and the caliber of their work.
+          This policy is regarded as a living document that will frequently be updated,
+          All academic staff members, across all departments, should use it as the need develops. Students will act honestly and comport themselves with integrity in accordance with the school's Code of Conduct.
+           </p>
+      </div>
+    </div>
+  </div><br><br>
+
+  
+  
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+    <button onclick="topScroll()" id="scrollButton">Click to Scroll to Top</button>
+
+</body>
+<br>
+<br>
+
+<footer class="page-footer font-medi pt-10" style="padding: 10px; background-color: #053a66;">
+
+  <div class="container-fluid text-center text-md-left">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 mt-md-0 mt-3 text-center" style="color: white;">
+          <h5>Mzamomtsha Primary School</h5>
+        </div>
+
+        <!-- <div class="col-md-3 mb-md-0 mb-3"> -->
+          <div class="col-lg-4">
+            <div class="row">
+              <div class=" col homeFooter">
+                <a href="home.htm" style="color: white;"><strong>Home</strong> </a>
+              </div>
+  
+              <div class=" col-4 contactusText contactFooter">
+                <a href="contactUs.html" style="color: white;"><strong>Contact Us</strong> </a>
+              </div>
+  
+              <div class="col-3 aboutFooter">
+                <a href="about2.html" style="color: white;"><strong>About</strong> </a>
+              </div>
+            </div>
+            
+          </div>
+          <!-- SOCIAL MEDIA ICONS -->
+          <div class="footerEmoji col-lg-4">
+            <div class="row">
+              <div class="col" style="color: white;"><a class=" logos fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x" href="https://www.facebook.com/"></a></div>
+
+              <div class="col" style="color: white;"><a class="fa fa-twitter fa-lg mr-md-5 mr-3 fa-2x" href="https://twitter.com/"></a></div>
+
+              <div class="col" style="color: white;"><a class="fa fa-envelope fa-lg mr-md-5 mr-3 fa-2x" href="https://www.google.com/gmail/about/"></a></div>
+            </div>
+          </div>
+      </div>
+      </div>
+</footer>
+</html>

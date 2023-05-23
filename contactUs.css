@@ -1,0 +1,521 @@
+/* css for nav bar starts here */
+.tab {
+  overflow: hidden;
+  border: 1px solid rgba(245, 229, 14, 0.89);
+  background-color: #1c5da7 ;
+
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none; 
+  cursor: pointer;
+  padding: 14px 16px;
+  width: 10%;
+  margin: auto;
+  transition: 0.3s;
+
+}
+
+.tab button:hover {
+  background-color: rgb(202, 190, 17);
+}
+
+.tab button.active {
+  background-color: rgb(202, 190, 17);
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Game Button on Navigation Bar */
+#gameBtn {
+  position: absolute;
+  /* background-color: inherit; */
+  float: left;
+  border: none;
+  outline: none; 
+  cursor: pointer;
+  padding: 14px 16px;
+  width: 10%;
+  margin: auto;
+  transition: 0.3s;
+  font-size: 110%;
+}
+
+#gameBtn :hover {
+  font-size: 122%;
+}
+/* Game Button End */
+
+@media screen and (max-width: 600px) {
+  .tab a:not(:first-child) {display: none;}
+  .tab a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+   
+  .tab button.responsive a {
+    float: none;
+    display: block;
+    text-align: bottom;
+  }
+
+
+
+
+
+
+
+a{
+  color:white;
+  text-decoration: none;
+}
+.logo {
+  max-width: 25%;
+}  
+
+
+
+.about {
+  background: #053a66;
+  flex-grow: 1;
+}
+
+.events{
+  background: #053a66;
+  flex-grow: 1;
+}
+.faq{
+  background: #053a66;
+  flex-grow: 1;
+}
+.contact{
+  background: #053a66;
+  flex-grow: 1;
+}
+
+
+
+.bottomnavbar{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  height:100%;
+  /* background-color: #fcf6e7; */
+  margin: 0;
+}
+
+
+  a{
+    color:white;
+    text-decoration: none;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .flex-container > div {
+   
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+ 
+  .contactsUs{
+    color: black;
+    
+    
+  }
+  
+  input[type=submit]:hover {
+    background-color: #2196F3;
+  }
+  
+  /* Style the container/contact section */
+  .containerContact {
+    border-radius: 5px;
+  
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width:600px ){
+    .flex-container{
+
+     
+      display: flex;
+       flex-direction: column;
+    
+        width:100%;
+       justify-content: center;
+
+    }
+    
+  }
+  
+  
+  @media screen and (max-width:600px ){
+    .flex-container > div {
+     
+     
+    width: 100%;
+    margin: 10px;
+      
+     
+        
+    }
+    
+  }
+  
+  
+
+
+  .img{
+    max-width: 100%;
+   height: auto;
+  }
+
+  address{
+    padding-top: 17px;
+    text-align: left;
+  }
+
+  /* footer 
+  footer div{
+    align-self:center;
+ }*/
+ 
+ /*footer{
+  display: flex;
+  color: white;
+  height:41px;
+  background-color:#053a66;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-top: 20px;
+  
+ }
+ .twitterlogo{
+  height:20px;
+  width:40px;
+  
+ }
+ .facebooklogo{
+  height:20px;
+  width:40px;
+  margin-right:20px;
+ }
+ 
+ 
+ .socialMediaImg{
+  margin-right: 200px;
+ }*/
+
+
+
+ .display-3 {
+  color: white ;
+  
+  align-items: center;
+  
+
+}
+
+/*.background_img {
+  height: 340px;
+    margin: 0px;
+    padding: 70px;
+    background-image: url("https://www.vvob.org/sites/belgium/files/styles/780pxx330px/public/images/mainimagebig/_bec4693_0.jpg?itok=c5WmaEos") ; 
+    background-size: cover ;
+
+}
+
+.logo {
+  background: url("https://o.remove.bg/downloads/0206abbb-08be-4667-9bce-010f3a8aed05/download-removebg-preview.png");
+  padding: 0px;
+  margin: 0px;
+  width: 300px;
+  height: 144px;
+  
+
+}*/
+
+
+.h1 {text-align: center;
+
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  
+}
+.about {
+  background: #053a66;
+  flex-grow: 1;
+  
+}
+
+.events{
+  background: #053a66;
+  flex-grow: 1;
+  
+ 
+}
+.faq{
+  background: #053a66;
+  flex-grow: 1;
+  
+  
+
+}
+.contact{
+  background: #053a66;
+  flex-grow: 1;
+ 
+  
+
+}
+
+.container > div {
+  
+  font-size: medium;
+  color: white;
+  padding: 0%;
+  border-width: 5px;
+  width: 100%;
+ 
+}
+
+
+.bottomnavbar{
+  display: flex;
+  justify-content: center;
+
+}
+
+.container:nth-of-type(0){
+  color: white;
+}
+
+.header30{
+  color: black;
+}
+.contactlogos{
+  width:75px;
+  height:75px;
+}
+
+form{
+  padding: 20px;
+  
+}
+
+
+
+
+/* COPY FOOTER CSS FROM HERE! */
+/* NEW FOOTER CSS */
+/* .footer .container {
+  padding: 60px;
+} */
+
+h5 {
+  padding-top: 20px ;
+}
+
+.homeFooter {
+  margin-top: 20px;
+  /* margin-left: 10px; */
+}
+
+.contactFooter {
+  margin-top: 20px;
+  margin-left: 35px;
+  
+}
+
+.aboutFooter {
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.fa{
+margin-top: 15px;
+padding: 10px;
+}
+/* COPY FOOTER CSS UNTIL HERE! */
+
+/* New header*/
+.jumbotron{
+  /* background-image: url('https://www.vvob.org/sites/belgium/files/styles/780pxx330px/public/images/mainimagebig/_bec4693_0.jpg?itok=c5WmaEos');
+
+  background-size:contain; */
+  background-image: url("/images/header\ new\ new.jpg");
+  background-size: cover;
+  opacity: 0.8;
+
+  margin-bottom: 0;
+}
+.container{
+  padding: 5px;
+}
+.headerLinks{
+  display: flex;
+  flex-direction: row;
+}
+
+footer{
+  background-color: #053a66;
+}
+
+
+
+.searchbar{
+  margin-left: 270px;
+}
+
+footer{
+  position:absolute;
+  bottom:0;
+}
+
+#page-container {
+  position: relative;
+  min-height: 10vh;
+}
+
+.contactheader{
+  text-align: center;
+
+}
+
+#submitButton{
+  background-color: #2196F3;
+  border-radius: 15px;
+  height: 35px;
+  width: 80px;
+  border: white;
+  color: white;
+ margin-left: 150px;
+}
+
+
+
+#scrollButton {
+  height: 35px;
+  background-color: #2196f3;
+  color: white;
+  border-radius: 15px;
+  margin-left: 655px;
+  margin-bottom: 10px;
+  border: white;
+}
+
+/* new form css */
+body {
+  font-family: sans-serif;
+}
+.form-container {
+  width: 100%;
+  
+  border: 1px solid black;
+}
+.contactForm{
+  border: 10px solid white;
+
+
+}
+label {
+  display: block;
+  margin-top: 25px;
+  font-size: 1rem;
+}
+.display-3{
+  font-size: 30px;
+ 
+
+}
+input, textarea {
+  width: 80%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+.btnform {
+  width: 82.5%;
+  height: 50px;
+  border-radius: 5px;
+  color: #fff;
+  background:#2196F3;
+  line-height: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px;
+  margin-top: 25px;
+}
+button:hover {
+  color: blue;
+}
+.errors {
+  display: block;
+  color: red;
+  margin-top: 5px;
+}
+.error {
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  box-shadow: 0 0 15px 0 rgba(255,36,0,1);
+}
+
+.formHeader{
+  text-align: center;
+
+}

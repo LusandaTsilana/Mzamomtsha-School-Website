@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Social Media Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='about2.css' />
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="Staff.css">
+
+  <title>Staff</title>
+  
+</head>
+
+<body>
+
+  <header>
+
+    <div class="jumbotron jumbotron-fluid text-white">
+      <div class="container">
+        <div class="schoolbackground row">
+          <div class=" col logo">
+            <a href="home.htm"><img src="images/School_badge-removebg-preview.png" alt="logo"></a>
+          </div>
+          <div class="col">
+            <h1 class="display-3">Mzamomtsha Primary School</h1>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- The navigation menu -->
+  <div class="tab">
+
+    <a href="home.htm"><button class="tablinks" onclick="openLink(event, 'homeLink')" style="color: white;">Home</button></a>
+    <a href="about2.html"><button class="tablinks" onclick="openlink(event, 'about.html')" style="color: white;" >About</button></a>
+    <a href="Staff.htm"><button class="tablinks" onclick="openlink(event, 'staff.hmtl')" style="color: white;" >Staff</button></a>
+    <a href="events.html"><button class="tablinks" onclick="openlink(event, 'events.html')" style="color: white;" >Events</button></a>
+    <a href="faq.html"><button class="tablinks" onclick="openlink(faq, 'faq.html')" style="color: white">FAQ</button></a>
+    <a href="contactUs.html"><button class="tablinks" onclick="openlink(contact, 'contact.html')" style="color: white;" >Contact</button></a>
+
+    <!-- Game Button -->
+    <a href="hangman.html"><button class="tablinks" id="gameBtn" onclick="window.open('hangman.html', 'newwindow', 'width=10000,height=5000'); return false;" style="color:white" ><strong>PLAY GAME</strong></button></a>
+  </div>
+  </header>
+  <br>
+  <br>
+
+  <!-- JAVASCRIPT file -->
+  
+
+  <!-- Page Title -->
+  <h1 class="aboutheader display-4" id="aboutTitle"><strong>Staff</strong></h1>
+
+  <!-- PRINCIPAL SECTION -->
+  <div class="section">
+
+    <img id="principal" src="/images/headmaster.png" width="380" height="250" img style="justify-content: center;">
+    <div class="text">
+      <br>
+      <h3><u>Principal</u></h3>
+      <br>
+      
+      <p>Mr Simphiwe Kuze is a very experienced teacher with a demonstrated history of working in the entertainment industry. Skilled in Microsoft Office, Coaching, Organizational Development, Public Speaking, and Training. He also has a strong education professional with a B Admin Honours (Industrial Psychology) focused in Industrial psychology from University of the Western Cape. He was our deputy principal for the past 3 years, and now he is our principal. He has 25 years of teaching Experience.</p>
+    </div>
+  </div>
+
+
+
+  <div class="section" id="section1">
+
+    <div class="text" style="align-items: center; justify-content: center;">
+
+      <h3 style="align-items: center;"><u>Our Staff</u></h3><br>
+
+      <p>Our staff are there to guide our learners reach their best version of themselves even outside the
+      school premises. <br>Each staff member is assigned to a certain number of students and this ensures that
+      each student gets the time and individual <br> attention that they need. Teachers plan and prepare teaching
+      and learning activities, inspiring their students to change and develop their social, personal and
+      eductaional skills.</p>
+      <br>
+      
+
+      <input type="text" name="Search" id="staffSearch" placeholder="Search Staff Member" onkeyup="searchStaff()"><br><br>
+
+
+      <!-- CARDS -->
+
+      <div class="row" style="align-items: center; justify-content: center;">
+
+
+        <div class="card" style="width: 18rem; align-items: center; background-color: white;">
+          <img src="/images/STAFF pictures/teacher 1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Mrs Marabela <br>
+              <p>Admin</p>
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; align-items: center; background-color: white;">
+          <img src="/images/STAFF pictures/teacher10.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Mr Mzimba <br>
+              <p>Foudation Phase - Grade R</p>
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; align-items: center; background-color: white;">
+          <img src="/images/STAFF pictures/teacher2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Mrs Adzilwe <br>
+              <p>Foundation Phase - Grade 1</p>
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; align-items: center; background-color: white;">
+          <img src="/images/STAFF pictures/teacher3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Mrs Ngabaza <br>
+              <p>Foundation Phase - Grade 2</p>
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; align-items: center; background-color: white;">
+          <img src="/images/STAFF pictures/teacher4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Mrs Simunyeke <br>
+              <p>Foundation Phase - Grade 3</p>
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; align-items: center; background-color: white;">
+          <img src="/images/STAFF pictures/teacher5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Mr Malope <br>
+              <p>Intermediate Phase - Natural Sciences and Technology</p>
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; align-items: center; background-color: white;">
+          <img src="/images/STAFF pictures/teacher6.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Mr Peters <br>
+              <p>Intermediate Phase - English and Life Orientation</p>
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; align-items: center; background-color: white;">
+          <img src="/images/STAFF pictures/teacher7.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Mr Malope <br>
+              <p>Intermediate Phase - Social Sciences</p>
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; align-items: center; background-color: white;">
+          <img src="/images/STAFF pictures/teacher8.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Mrs Ngoepe <br>
+              <p>Intermediate Phase - Mathematics</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  </div>
+
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+
+  <!-- Scroll to top button -->
+  <button onclick="topScroll()" id="scrollButton">Click to Scroll to Top</button>
+
+</body>
+<br>
+<br>
+
+<footer class="page-footer font-medi pt-10" style="padding: 10px; background-color: #053a66;">
+
+  <div class="container-fluid text-center text-md-left">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 mt-md-0 mt-3 text-center" style="color: white;">
+          <h5>Mzamomtsha Primary School</h5></div>
+
+        <!-- <div class="col-md-3 mb-md-0 mb-3"> -->
+        <div class="col-lg-4">
+          <div class="row">
+            <div class=" col homeFooter">
+              <a href="home.htm" style="color: white;"><strong>Home</strong></a>
+            </div>
+
+            <div class=" col-4 contactusText contactFooter">
+              <a href="contactUs.html" style="color: white;"><strong>Contact Us</strong></a>
+            </div>
+
+            <div class="col-3 aboutFooter">
+              <a href="about2.html" style="color: white;"><strong>About</strong></a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- SOCIAL MEDIA ICONS -->
+        <div class="footerEmoji col-lg-4">
+          <div class="row">
+            <div class="col" style="color: white;"><a class=" logos fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x" href="https://www.facebook.com/"></a></div>
+
+            <div class="col" style="color: white;"><a class="fa fa-twitter fa-lg mr-md-5 mr-3 fa-2x" href="https://twitter.com/"></a>
+            </div>
+
+            <div class="col" style="color: white;"><a class="fa fa-envelope fa-lg mr-md-5 mr-3 fa-2x" href="https://www.google.com/gmail/about/"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="staff.js"></script>
+  <script src="faq.js"></script>
+</footer>
+</html>
+

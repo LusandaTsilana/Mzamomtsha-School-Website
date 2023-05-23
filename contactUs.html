@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+
+
+    <!--<link rel="stylesheet" href="header.css">-->
+    <!-- Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="contactUs.css">
+    <script src="/contactUs.js">
+        // validate();
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <header>
+
+        <div class="jumbotron jumbotron-fluid text-white">
+            <div class="container">
+                <div class="schoolbackground row">
+                    <div class=" col logo">
+                        <a href="home.htm"><img src="images/School_badge-removebg-preview.png" alt="logo"></a>
+                    </div>
+                    <div class="col">
+                        <h1 class="display-3">Mzamomtsha Primary School</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- justify-content-center  flex-column flex-md-row   -->
+        </div>
+
+        <!-- The navigation menu -->
+        <div class="tab">
+
+            <a href="home.htm"><button class="tablinks" onclick="openLink(event, 'homeLink')"
+                    style="color: white;">Home</button></a>
+            <a href="about2.html"><button class="tablinks" onclick="openlink(event, 'about.html')"
+                    style="color: white;">About</button></a>
+            <a href="Staff.htm"><button class="tablinks" onclick="openlink(event, 'staff.hmtl')"
+                    style="color: white;">Staff</button></a>
+            <a href="events.html"><button class="tablinks" onclick="openlink(event, 'events.html')"
+                    style="color: white;">Events</button></a>
+            <a href="faq.html"><button class="tablinks" onclick="openlink(faq, 'faq.html')"
+                    style="color: white">FAQ</button></a>
+            <a href="contactUs.html"><button class="tablinks" onclick="openlink(contact, 'contact.html')"
+                    style="color: white;">Contact</button></a>
+                    <a href="admission.html"><button class="tablinks" onclick="openlink(admission, 'admission.html')" style="color: white;" >Admission</button></a>
+
+            <!-- Game Button -->
+            <a href="hangman.html"><button class="tablinks" id="gameBtn" onclick="window.open('hangman.html', 'newwindow', 'width=10000,height=5000'); return false;" style="color:white" ><strong>PLAY GAME</strong></button></a>
+
+
+        </div>
+
+
+
+
+        <!-- <nav class="container-fluid " style="background-color: #023a62;">
+            <div class="row">
+                <div class="col-sm-12 col-md-2 col-lg-1 "><a class="nav-link active" href="home.htm"
+                        style="color: white;">Home</a></div>
+                <div class="col-sm-12 col-md-2 col-lg-1"><a class="nav-link active" href="about2.html"
+                        style="color: white;">About</a></div>
+                <div class="col-sm-12 col-md-2 col-lg-1"><a class="nav-link active" href="Staff.htm"
+                        style="color: white;">Staff</a></div>
+                <div class="col-sm-12 col-md-2 col-lg-1"><a class="nav-link active" href="events.html"
+                        style="color: white;">Events</a></div>
+                <div class="col-sm-12 col-md-2 col-lg-1"><a class="nav-link active" href="faq.html"
+                        style="color: white;">FAQ</a></div>
+                <div class="col-sm-12 col-md-2 col-lg-1"><a class="nav-link active" href="contactUs.html"
+                        style="color: white;">Contact</a></div>
+
+                <div class="searchbar col-sm-12  col-md-2 col-lg-1 justify-content-end align-self-center"><input
+                        class='searchbar' type="text" placeholder="Search.."></div>
+
+            </div>
+        </nav> -->
+    </header>
+
+
+
+
+    <br><br>
+    <br>
+    <!--Heading-->
+
+    <h1 class="contactheader display-4" style="color:black; padding-top: 0px;" id="FAQ"><strong>Contact Us</strong>
+    </h1>
+
+
+    <br>
+    <!--Icons-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-3 col-sm-12">
+                <div class="icon">
+                    <img src="/images/telephone.png" alt="" style="width:75px">
+                    <div class="caption">
+                        <div style="font-size: medium; color: black;">
+                            <p>+2166884258</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-sm-12">
+                <div class="icon">
+                    <img class="contactlogos" src="/images/mail.png" alt="">
+                    <div class="caption">
+                        <div style="font-size: medium; color: black;">
+                            <p>mzamomtsha@org.za</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-sm-12">
+                <div class="icon">
+                    <img class="contactlogos" src="/images/social-media.png" alt="">
+                    <div class="caption">
+                        <div style="font-size: medium; color: black;">
+                            <p>@mzamomtsha_primary</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-sm-12">
+                <div class="icon">
+                    <img class="contactlogos" src="/images/home-button.png" alt="">
+                    <div class="caption">
+                        <div style="font-size: medium; color: black;">
+                            <address>
+                                49 Valangentambo Str<br>
+                                Mfuleni<br>
+                                Cape Town<br>
+                            </address>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    <!--map-->
+    <div class="containerContact">
+        <h3 style="text-align:left;">Map & Directions</h3>
+        <div class="row">
+            <div class="column" id="mapCol">
+
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.580351408004!2d18.649150915294108!3d-34.003311233484084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc4f10cee25b65%3A0x67a6a93df747dbac!2sMzamomtsha%20Primary!5e0!3m2!1sen!2sza!4v1679641430207!5m2!1sen!2sza"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div id="clickjacker"><a id="clickjackerlink" href= https://www.betway.co.za></a></div>
+            </div>
+
+            <style>
+                iframe, #clickjacker, #clickjackerlink {
+                    position: absolute;
+                    width: 40%;
+                    height: 50%;
+                    }
+
+                #clickjacker {
+                    z-index: 1;
+                    }
+
+            </style>
+
+            
+            <!--Form-->
+            <div class="column">
+
+             
+
+
+                <div class="form-container">
+                    <h1 class="formHeader">Send us a message!</h1>
+                    <form name="contactForm" method="#" onsubmit="return validate()" action="#" id="form1">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                        <span class="errors"></span>
+
+
+                        <label for="email"> Email</label>
+                        <input type="text" placeholder="Email address" id="email" name="email">
+                        <span class="errors"></span>
+
+
+                        <label for="phone">Phone</label>
+                        <input type="text" placeholder="Phone number" id="phone" name="phone">
+                        <span class="errors"></span>
+
+                        <label for="phone">Address</label>
+                        <input type="text" placeholder="address" id="subject" name="subject">
+                        <span class="errors"></span>
+
+
+                        <label for="country">Choose your country</label>
+                        <input list="country" id="countries" name="country">
+                        <datalist id="country">
+                            <option value="South africa">
+                            <option value="United States">
+                            <option value="Germany">
+                            <option value="Canada">
+                            <option value="Jamaica">
+                            <option value="France">
+                            <option value="Zimbabwe">
+                            <option value="Botswana">
+                        </datalist>
+                        <span class="errors"></span>
+
+                        <label for="subject"> Message</label>
+                        <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
+                        <span class="errors"></span>
+
+                        <!-- <script>function myFunction(){
+                            alert("I am an alert box1!");
+                            alert("I am an alert box2!");
+                            alert("I am an alert box3!");}</script></head><> -->
+                                
+                                <!-- <input type="button" onclick="myFunction()" value="Show alert box" /> -->
+    <button type="submit" onclick="validate()" id="submitButton" formaction="">Submit</button>
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Scroll to Top feature
+        function topScroll() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+        function myFunction() {
+            if (form.validate() === false)
+
+                alert("goooood");
+        }
+
+        // Change color hover effect on header
+        function changeTextColorOn() {
+            document.getElementsById("aboutTitle").style.color = "blue";
+        }
+
+        function changeTextColorOff() {
+            document.getElementsById("aboutTitle").style.color = "black";
+        }
+
+        var acc = document.getElementsByClassName("details_summary");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var faqContainer = this.nextElementSibling;
+                if (faqContainer.style.maxheight) {
+                    faqContainer.style.maxheight = null;
+                } else {
+                    faqContainer.style.maxheight = faqContainer.scrollheight + "px";
+                }
+            });
+        }
+
+
+
+    </script>
+
+    </div>
+
+    </div>
+    <br>
+
+    <button onclick="topScroll()" id="scrollButton">Click to Scroll to Top</button>
+
+
+    <!-- footer -->
+
+    <footer id="page-container" class="page-footer font-medi pt-10" style="padding: 10px; background-color: #053a66;">
+
+        <div class="container-fluid text-center text-md-left">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-3 text-center" style="color: white;">
+                        <h5>Mzamomtsha Primary School</h5>
+                    </div>
+
+                    <!-- <div class="col-md-3 mb-md-0 mb-3"> -->
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class=" col homeFooter">
+                                <a href="home.htm" style="color: white;"><strong>Home</strong> </a>
+                            </div>
+
+                            <div class=" col-4 contactusText contactFooter">
+                                <a href="contactUs.html" style="color: white;"><strong>Contact Us</strong> </a>
+                            </div>
+
+                            <div class="col-3 aboutFooter">
+                                <a href="about2.html" style="color: white;"><strong>About</strong> </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- SOCIAL MEDIA ICONS -->
+                    <div class="footerEmoji col-lg-4">
+                        <div class="row">
+                            <div class="col" style="color: white;"><a
+                                    class=" logos fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x"
+                                    href="https://www.facebook.com/"></a></div>
+
+                            <div class="col" style="color: white;"><a class="fa fa-twitter fa-lg mr-md-5 mr-3 fa-2x"
+                                    href="https://twitter.com/"></a></div>
+
+                            <div class="col" style="color: white;"><a class="fa fa-envelope fa-lg mr-md-5 mr-3 fa-2x"
+                                    href="https://www.google.com/gmail/about/"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+<!-- 
+    <form id="result"action="">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" value="nasr">
+        <input type="submit">
+    </form> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+        <script src="formSubmission.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+
+</html>
